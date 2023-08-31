@@ -8,7 +8,7 @@ EXPOSE 80 443 1180 11443
 # Packages are listed in alphabetical order, for ease of readability and ease of maintenance.
 RUN     apk update \
     &&  apk add bash bind-tools busybox-extras curl \
-                iproute2 iputils jq mtr \
+                iproute2 screen iputils jq mtr \
                 net-tools nginx openssl \
                 perl-net-telnet procps tcpdump tcptraceroute wget \
     &&  mkdir /certs /docker \
